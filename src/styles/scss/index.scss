@@ -1,7 +1,8 @@
-@import "base/variables";
-@import "base/elements";
+@import 'base/variables';
+@import 'base/elements';
 
-@import "components/App";
+@import 'components/App';
+@import 'pages/Home';
 
 * {
   box-sizing: border-box;

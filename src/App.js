@@ -2,6 +2,8 @@ import React from 'react';
 import { I18n } from 'react-i18next';
 import './i18n/i18n';
 
+import IconedSection from 'components/IconedSection';
+
 function App() {
   return (
     <I18n ns="translations">
@@ -21,6 +23,15 @@ function App() {
               </a>
             </header>
           </section>
+
+          <IconedSection
+            title={t('landing-page-about-header')}
+            description={t('landing-page-about-text')}
+            classes={'u-layout u-layout--home'}
+            icon={
+              <img src="http://www.myiconfinder.com/uploads/iconsets/256-256-64273d52c282e3b26d2d0968d08b9d8d.png" />
+            }
+          />
         </div>
       )}
     </I18n>
